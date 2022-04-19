@@ -46,6 +46,7 @@ const App: React.FC = () => {
 						readOnly
 						value={normalToSig}
 						id="converter-sig"
+						placeholder="Texto convertido (texto => sigilos)..."
 					/>
 				</ConverterGroup>
 				<ConverterGroup>
@@ -55,7 +56,11 @@ const App: React.FC = () => {
 						id="converter-sig"
 						placeholder="Escreva o texto (use o teclado de sigilos)..."
 					/>
-					<Converter readOnly value={sigToNormal} />
+					<Converter
+						readOnly
+						value={sigToNormal}
+						placeholder="Texto convertido (sigilos => texto)..."
+					/>
 				</ConverterGroup>
 			</ConverterWrapper>
 			<KeyBoard>

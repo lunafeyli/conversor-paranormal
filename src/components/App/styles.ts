@@ -7,6 +7,7 @@ export const Container = styled("div", {
 	},
 	height: "100vh",
 	padding: "16px 0 32px",
+	gap: 12,
 });
 
 export const Header = styled("header", {
@@ -55,7 +56,9 @@ export const ConverterWrapper = styled("div", {
 });
 
 export const ConverterGroup = styled("div", {
-	$flex: {},
+	$flex: {
+		fullCenter: true,
+	},
 	gap: 6,
 	flex: 0.45,
 });
@@ -67,16 +70,19 @@ export const Converter = styled("textarea", {
 	color: "$white",
 	width: "100%",
 	height: 128,
+	maxWidth: 500,
 	padding: 8,
 	fontFamily: "Poppins",
 	outline: 0,
+	fontSize: 18,
 
 	"&#converter-sig": {
 		fontFamily: "OutroLado",
-		fontSize: 18,
+		fontSize: 26,
 
 		"&::placeholder": {
 			fontFamily: "Poppins",
+			fontSize: 18,
 		},
 	},
 });
